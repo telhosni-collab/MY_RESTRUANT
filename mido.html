@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery page</title>
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+       
+        .bg-custom-red {
+            background-color: #C0392B;
+        }
+
+        .text-custom-red {
+            color: #C0392B;
+        }
+
+        .border-custom-red {
+            border-color: #C0392B;
+        }
+
+        .hover-bg-custom-red:hover {
+            background-color: #A93226;
+        }
+    </style>
+</head>
+
+<body class="bg-[#ffffff] text-gray-100 font-sansblack font-sans">
+ 
+ 
+ 
+  <nav class="relative shadow-lg bg-[#181818]">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <button id="menu-btn" type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-red-700 hover:duration-500 hover:text-white focus:outline-2 focus:outline-offset-2 focus:outline-white">
+            
+
+
+            <svg id="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 transition-transform duration-300">
+              <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-1  items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex shrink-0 items-center">
+            
+            <img src="Gemini_Generated_Image_k3k1e5k3k1e5k3k1-removebg-preview.png" alt="Restaurant Logo" class="h-10 w-auto scale-150" />
+          </div>
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex space-x-4">
+              <a href="index.html" class="animate-fadeDown rounded-md bg-[#C0392B] px-3 py-2 text-sm font-medium text-white hover:text-black hover:bg-white transition font-serif">Home</a>
+
+              <a href="index MENU.html" class="animate-fadeDown rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-red-600/40 hover:text-white transition font-serif">Menu</a>
+              <a href="us2.html" class="animate-fadeDown rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-red-600/40 hover:text-white transition font-serif">Us</a>
+              <a href="mido.html" class="animate-fadeDown rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-red-600/40 hover:text-white transition font-serif">Gallery</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="text-xl animate-fadeDown font-bold tracking-wide">
+            <span class="text-white font-serif"> ROUGE </span>
+            <span class="text-[#C0392B] font-serif"> Dining</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- القائمة المنسدلة مع تأثير السلايد -->
+    <div id="mobile-menu" class="transform transition-all duration-300 ease-in-out overflow-hidden sm:hidden bg-[#FDFCFB] backdrop-blur-sm"
+         style="max-height: 0; opacity: 0;">
+      <div class="space-y-1 px-2 pt-5 pb-3">
+        <a href="index.html" class="block rounded-md bg-red-700 px-3 py-2 text-base font-medium text-black hover:bg-red-800 hover:text-white transition">Home</a>
+        <a href="index MENU.html" class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-[#C0392B] hover:text-white transition">Menu</a>
+        <a href="us2.html" class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-[#C0392B] hover:text-white transition">Us</a>
+        <a href="mido.html" class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-[#C0392B] hover:text-white transition">Gallery</a>
+      </div>
+    </div>
+</nav>
+</head>
+
+
+
+
+  
+    <main id="gallery" class="container mx-auto px-4 py-8">
+   
+        <div class="flex flex-col lg:flex-row gap-8 mb-12 pb-8 border-b-2 border-gray-200">
+           
+            <div class="w-full lg:w-1/3 flex-shrink-0">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow cursor-pointer">
+                    <img src="gallery/المطعم من الخارج.jpg" alt="First Customer"
+                        class="w-full h-auto object-contain p-2">
+                    <div class="bg-gray-50 border-t border-gray-200 p-4">
+                        <h3 class="text-lg font-semibold text-custom-red text-center">ROUGE Dining Restaurant</h3>
+                    </div>
+                </div>
+            </div>
+      
+            <div class="w-full lg:w-2/3 flex flex-col justify-center">
+                <h2 class="text-3xl font-bold text-custom-red mb-4">My Restraunt </h2>
+                <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                   Experience great food, warm atmosphere, and exceptional taste.
+                  <div class="flex gap-4 items-center">
+                    <span class="text-sm text-gray-500"><i class="fas fa-heart"></i> 25 Likes</span>
+                    <button class="text-custom-red hover:text-red-700"><i class="fas fa-share text-xl"></i></button>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- Gallery Item 1 Section -->
+        <div class="flex flex-col lg:flex-row gap-8 mb-12 pb-8 border-b-2 border-gray-200" data-category="nature">
+            <!-- Gallery Item 1 Image -->
+            <div class="w-full lg:w-1/3 flex-shrink-0">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow cursor-pointer">
+                    <img src="gallery/صاله.jpg" alt="chef Ali"
+                        class="w-full h-auto object-contain p-2">
+                    <div class="bg-gray-50 border-t border-gray-200 p-4">
+                        <h3 class="text-lg font-semibold text-custom-red text-center">Inside ROUGE Dining</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Gallery Item 1 Text Content -->
+            <div class="w-full lg:w-2/3 flex flex-col justify-center">
+                <h2 class="text-3xl font-bold text-custom-red mb-4">Inside ROUGE Dining</h2>
+                <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                    An elegant space crafted for comfort, taste, and memorable moments.
+                </p>
+                <div class="flex gap-4 items-center">
+                    <span class="text-sm text-gray-500"><i class="fas fa-heart"></i> 25 Likes</span>
+                    <button class="text-custom-red hover:text-red-700"><i class="fas fa-share text-xl"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery Item 2 Section -->
+        <div class="flex flex-col lg:flex-row gap-8 mb-12 pb-8 border-b-2 border-gray-200" data-category="art">
+            <!-- Gallery Item 2 Image -->
+            <div class="w-full lg:w-1/3 flex-shrink-0">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow cursor-pointer">
+                    <img src="gallery/salmon.jpeg" alt="Salmon Grilled"
+                        class="w-full h-auto object-contain p-2">
+                    <div class="bg-gray-50 border-t border-gray-200 p-4">
+                        <h3 class="text-lg font-semibold text-custom-red text-center">Salmon Grilled</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Gallery Item 2 Text Content -->
+            <div class="w-full lg:w-2/3 flex flex-col justify-center">
+                <h2 class="text-3xl font-bold text-custom-red mb-4">Salmon Grilled</h2>
+                <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                    Exquisitely prepared grilled salmon at The Rouge Dining. Fresh, flavorful, and perfectly cooked to
+                    bring out the natural richness of premium salmon.
+                </p>
+                <div class="flex gap-4 items-center">
+                    <span class="text-sm text-gray-500"><i class="fas fa-heart"></i> 18 Likes</span>
+                    <button class="text-custom-red hover:text-red-700"><i class="fas fa-share text-xl"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery Item 3 Section -->
+        <div class="flex flex-col lg:flex-row gap-8 mb-12 pb-8 border-b-2 border-gray-200" data-category="other">
+            <!-- Gallery Item 3 Image -->
+            <div class="w-full lg:w-1/3 flex-shrink-0">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow cursor-pointer">
+                    <img src="gallery/مائده.jpg" alt="Special Table"
+                        class="w-full h-auto object-contain p-2">
+                    <div class="bg-gray-50 border-t border-gray-200 p-4">
+                        <h3 class="text-lg font-semibold text-custom-red text-center">Special Table</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Gallery Item 3 Text Content -->
+            <div class="w-full lg:w-2/3 flex flex-col justify-center">
+                <h2 class="text-3xl font-bold text-custom-red mb-4">Special Table</h2>
+                <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                    The best view in the restaurant at The Rouge Dining. A table everyone wants at The Rouge Dining
+                    where every seat is the best seat. Dine with the perfect view at The Rouge Dining, creating
+                    unforgettable memories with exceptional service and ambiance.
+                <div class="flex gap-4 items-center">
+                    <span class="text-sm text-gray-500"><i class="fas fa-heart"></i> 12 Likes</span>
+                    <button class="text-custom-red hover:text-red-700"><i class="fas fa-share text-xl"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery Item 4 Section -->
+        <div class="flex flex-col lg:flex-row gap-8 mb-12 pb-8" data-category="nature">
+            <!-- Gallery Item 4 Image -->
+            <div class="w-full lg:w-1/3 flex-shrink-0">
+               <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow cursor-pointer">
+                    <img src="gallery/out door seating.png" alt="Owners"
+                        class="w-full h-auto object-contain p-2">
+                    <div class="bg-gray-50 border-t border-gray-200 p-4">
+                        <h3 class="text-lg font-semibold text-custom-red text-center">ROUGE Rooftop Experience</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Gallery Item 4 Text Content -->
+            <div class="w-full lg:w-2/3 flex flex-col justify-center">
+                <h2 class="text-3xl font-bold text-custom-red mb-4">The Roof</h2>
+                <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                Enjoy a breathtaking rooftop dining experience at ROUGE, where every meal is paired with stunning views, fresh air, and an unforgettable ambiance that elevates your taste and your evening.
+                <div class="flex gap-4 items-center">
+                    <span class="text-sm text-gray-500"><i class="fas fa-heart"></i> 30 Likes</span>
+                    <button class="text-custom-red hover:text-red-700"><i class="fas fa-share text-xl"></i></button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- About Section -->
+    <section id="about" class="bg-gray-50 py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold text-custom-red mb-4">About the Gallery</h2>
+            <p class="text-black max-w-2xl mx-auto">Snapshots of taste, style, and the ROUGE experience.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-white py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-custom-red text-center mb-8">Contact Information</h2>
+            <div class="max-w-md mx-auto bg-gray-50 p-6 rounded-lg shadow-md">
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-semibold mb-2">Address</label>
+                    <p class="text-gray-600">123 Gallery Street, borg Alarab, City 12345</p>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-semibold mb-2">Email</label>
+                    <p class="text-gray-600"><a href="mailto:telhosni@gmail.com"
+                            class="text-custom-red hover:text-red-700">telhosni@gmail.com</a></p>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-semibold mb-2">Phone</label>
+                    <p class="text-gray-600">+201553643277</p>
+                </div>
+                <div>
+                    <label class="block text-gray-700 font-semibold mb-2">Hours</label>
+                    <p class="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    <p class="text-gray-600">Saturday - Sunday: 10:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Footer -->
+    <footer class="bg-black text-white py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2026 Advanced Photo Gallery. All rights reserved. <a href="#"
+                    class="text-custom-red hover:text-red-400">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+<script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuIcon = document.getElementById("menu-icon");
+    let isMenuOpen = false;
+
+    menuBtn.addEventListener("click", () => {
+        if (!isMenuOpen) {
+            // فتح القائمة بتأثير السلايد
+            mobileMenu.style.maxHeight = mobileMenu.scrollHeight + "px";
+            mobileMenu.style.opacity = "1";
+            // تدوير الأيقونة
+            menuIcon.style.transform = "rotate(90deg)";
+            isMenuOpen = true;
+        } else {
+            // إغلاق القائمة بتأثير السلايد
+            mobileMenu.style.maxHeight = "0";
+            mobileMenu.style.opacity = "0";
+            // إعادة الأيقونة لوضعها الطبيعي
+            menuIcon.style.transform = "rotate(0deg)";
+            isMenuOpen = false;
+        }
+    });
+
+    // إغلاق القائمة عند النقر على رابط (اختياري)
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.style.maxHeight = "0";
+            mobileMenu.style.opacity = "0";
+            menuIcon.style.transform = "rotate(0deg)";
+            isMenuOpen = false;
+        });
+    });
+</script>
+</body>
+</html>
+</body>
+
+</html>

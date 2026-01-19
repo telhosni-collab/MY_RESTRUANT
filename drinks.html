@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rouge Dining | Drinks Menu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+  /* إذا أردت تأثير أكثر تطوراً مع تأخير للعناصر */
+    #mobile-menu a {
+        transform: translateY(-10px);
+        opacity: 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    
+    #mobile-menu[style*="max-height: 0"] a {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    
+    #mobile-menu:not([style*="max-height: 0"]) a {
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay: calc(0.1s * var(--i, 0));
+    }
+     .text-custom-red {
+            color: #C0392B;
+        }
+
+
+
+</style>
+<body class="bg-[#FDFCFB] text-gray-100 font-sans">
+
+  <!-- Navbar -->
+ <nav class="relative shadow-lg bg-[#181818]">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <button id="menu-btn" type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-red-700 hover:duration-500 hover:text-white focus:outline-2 focus:outline-offset-2 focus:outline-white">
+            <span class="absolute -inset-0.5"></span>
+            <span class="sr-only">Open main menu</span>
+            <svg id="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 transition-transform duration-300">
+              <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex shrink-0 items-center">
+            <img src="Logo_Rouge_Dining-removebg-preview.png" alt="Restaurant Logo" class="h-10 w-auto scale-150" />
+          </div>
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex space-x-4">
+              <a href="index.html" class="animate-fadeDown rounded-md bg-[#C0392B] px-3 py-2 text-sm font-medium text-white hover:text-black hover:bg-white transition font-serif">Home</a>
+
+              <a href="index MENU.html" class="animate-fadeDown rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-red-600/40 hover:text-white transition font-serif">Menu</a>
+              <a href="us2.html" class="animate-fadeDown rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-red-600/40 hover:text-white transition font-serif">Us</a>
+              <a href="mido.html" class="animate-fadeDown rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-red-600/40 hover:text-white transition font-serif">Gallery</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="text-xl animate-fadeDown font-bold tracking-wide">
+            <span class="text-white font-serif"> ROUGE </span>
+            <span class="text-[#C0392B] font-serif"> Dining</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- القائمة المنسدلة مع تأثير السلايد -->
+    <div id="mobile-menu" class="transform transition-all duration-300 ease-in-out overflow-hidden sm:hidden bg-[#FDFCFB] backdrop-blur-sm"
+         style="max-height: 0; opacity: 0;">
+      <div class="space-y-1 px-2 pt-5 pb-3">
+        <a href="index.html" class="block rounded-md bg-red-700 px-3 py-2 text-base font-medium text-black hover:bg-red-800 hover:text-white transition">Home</a>
+
+        <a href="index MENU.html" class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-[#C0392B] hover:text-white transition">Menu</a>
+        <a href="us2.html" class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-[#C0392B] hover:text-white transition">Us</a>
+        <a href="mido.html" class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-[#C0392B] hover:text-white transition">Gallery</a>
+      </div>
+    </div>
+</nav>
+
+  <!-- Header -->
+  <header class="pt-28  text-center bg-gradient-to-b from-[#c1c1c1] to-[#b9b5b5]">
+    <h2 class="text-4xl font-extrabold font-serif text-[#C0392B]">Drinks Menu</h2>
+    <p class="mt-4 text-black max-w-xl mx-auto  pb-5">Cool, classic, and refreshing beverages.</p>
+  </header>
+   <!-- Main Section -->
+    <section class="h-screen w-full bg-main flex items-center justify-center text-center px-">
+        <div class="bg-black bg-opacity-60 p-10 rounded-2xl shadow-2xl">
+            <h2 class="text-5xl font-bold  font-serif text-[#C0392B] mb-6 drop-shadow-xl">
+                 Drinks Menu
+            </h2>
+
+           
+            <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-6">
+
+                <!-- Buttons -->
+                <a href="seafood.html" class="bg-slate-200 hover:bg-red-400  px-6 py-3 rounded-xl font-bold text-black shadow-lg">
+    Seafood
+</a>
+
+<a href="meats.html" class="bg-slate-200 hover:bg-red-400  px-6 py-3 rounded-xl font-bold text-black shadow-lg">
+    Meats
+</a>
+
+<a href="drinks.html" class="bg-red-700 hover:bg-red-900  hover:duration-500 animate-pulse px-6 py-3 rounded-xl font-bold text-black shadow-lg">
+    Drinks
+</a>
+
+<a href="deserts.html" class="bg-slate-200 hover:bg-red-400  px-6 py-3 rounded-xl font-bold text-black shadow-lg">
+    Desserts
+</a>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+  <!-- Cards Section -->
+  <!-- Seafood Cards Section -->
+<section class="max-w-7xl mx-auto px-6 py-16 border-b-2 border-red-600">
+
+  <h3 class="text-3xl font-bold font-serif text-[#C0392B] mb-12 text-center  pb-4">
+    Drinks Selection
+  </h3>
+  <h3 class="text-3xl font-bold font-serif text-[#C0392B] mb-12  border-l-2 border-[#C0392B] pl-5  pb-4">
+     Hot Beverages ☕
+  </h3>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+    <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="drinks/Expresso.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl text-[#ff0000] font-semibold mb-2 group-hover:text-red-950 transition">
+        Espresso
+        </h4>
+        <p class="text-black text-sm mb-4">
+         A bold and intense coffee shot with a rich aroma and deep flavor.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$52</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+
+    <!-- Duplicate Card -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <div class="h-52 overflow-hidden">
+        <img src="drinks/Cappuccino.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <div class="p-6">
+        <h4 class="text-xl text-[#ff0000] font-semibold mb-2 group-hover:text-red-950 transition">
+         Cappuccino
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Espresso blended with steamed milk and topped with light, creamy foam.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$100</span>
+      </div>
+
+    </div>
+     <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="drinks/Latte.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl text-[#ff0000] font-semibold mb-2 group-hover:text-red-950 transition">
+          Latte
+
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Smooth espresso mixed with warm milk for a balanced, creamy taste.</p>
+        <span class="text-red-950 font-bold text-lg">$47</span>
+      </div>
+
+    </div>
+      <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="drinks/Hot Chocolate.jpg"
+              alt="Seafood Dish"
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl text-[#ff0000] font-semibold mb-2 group-hover:text-red-950 transition">
+          Hot Chocolate
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Rich and creamy hot chocolate with a hint of vanilla.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$43</span>
+      </div>
+
+    </div>
+     <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="drinks/Turkish Coffe.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl text-[#ff0000] font-semibold mb-2 group-hover:text-red-950 transition">
+         Turkish Coffee
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Traditional Turkish coffee served with a hint of cardamom.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$33</span>
+      </div>
+
+    </div>
+     <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="drinks/Green Tea.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl text-[#ff0000] font-semibold mb-2 group-hover:text-red-950 transition">
+         Green Tea
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Light and refreshing tea with a clean, natural flavor.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$29</span>
+      </div>
+
+    </div>
+     <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="drinks/Herbal Tea.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl text-[#ff0000] font-semibold mb-2 group-hover:text-red-950 transition">
+        Herbal Tea
+        </h4>
+        <p class="text-black text-sm mb-4">
+         A soothing blend of herbs for a calm and relaxing drink.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$35</span>
+      </div>
+
+    </div>
+     <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="drinks/Expresso.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl text-[#ff0000] font-semibold mb-2 group-hover:text-red-950 transition">
+         Chai Latte
+        </h4>
+        <p class="text-black text-sm mb-4">
+         Spiced tea blended with steamed milk for a warm and aromatic flavor.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$23</span>
+      </div>
+
+    </div>
+     <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="drinks/Matcha Latte.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl text-[#ff0000] font-semibold mb-2 group-hover:text-red-950 transition">
+         Matcha Latte
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Premium green tea powder mixed with milk for a smooth, creamy drink.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$41</span>
+      </div>
+
+    </div>
+   
+     
+
+  </div>
+  
+</section>
+<section class="max-w-7xl mx-auto px-6 py-16 border-b-2 border-[#C0392B]">
+   
+  <h3 class="text-3xl font-bold font-serif text-[#C0392B] mb-12  border-l-2 border-[#C0392B] pl-5  pb-4">
+     Cold Beverages 🧊
+  </h3>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+
+ <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="drinks/iced coffe.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl text-[#ff0000] font-semibold mb-2 group-hover:text-red-950 transition">
+          Iced Coffee
+
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Cold espresso mixed with milk for a creamy, chilled delight.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$60</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+ <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="drinks/Iced Tea.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl text-[#ff0000] font-semibold mb-2 group-hover:text-red-950 transition">
+        Iced Tea
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Light and refreshing tea served ice-cold for a crisp flavor.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$10</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+ <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="drinks/Lemonada.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl text-[#ff0000] font-semibold mb-2 group-hover:text-red-950 transition">
+          Lemonade
+
+        </h4>
+        <p class="text-black text-sm mb-4">
+         Freshly squeezed lemons blended with water and a hint of sweetness.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$12</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+ <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="drinks/Peach ice tea.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl text-[#ff0000] font-semibold mb-2 group-hover:text-red-950 transition">
+         Peach Iced Tea
+        </h4>
+        <p class="text-black text-sm mb-4">
+         Iced tea infused with natural peach flavor for a fruity refreshment.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$8</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+ <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="drinks/Mint Lemon Drink.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl text-[#ff0000] font-semibold mb-2 group-hover:text-red-950 transition">
+         Mint Lemon Drink
+
+        </h4>
+        <p class="text-black text-sm mb-4">
+         A zesty and cooling mix of lemon and fresh mint leaves.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$11</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+ <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="drinks/Iced Latte.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl text-[#ff0000] font-semibold mb-2 group-hover:text-red-950 transition">
+          Iced Latte
+        </h4>
+        <p class="text-black text-sm mb-4">
+        Cold espresso mixed with milk for a creamy, chilled delight.</p>
+        <span class="text-red-950 font-bold text-lg">$7</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+
+
+</section>
+<section class="max-w-7xl mx-auto px-6 py-16 border-b-2 border-[#C0392B] ">
+   
+  <h3 class="text-3xl font-serif text-[#C0392B] mb-12  border-l-2 border-[#C0392B] pl-5  pb-4">
+     Fresh Juices 🥭
+  </h3>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="drinks/Orange Juice.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl text-[#ff0000] font-semibold mb-2 group-hover:text-red-950 transition">
+          Orange Juice
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Freshly squeezed oranges with a bright and refreshing citrus taste.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$11</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+      <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="drinks/Mango Juice.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl text-[#ff0000] font-semibold mb-2 group-hover:text-red-950 transition">
+         Mango Juice
+
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Smooth and rich mango juice with a naturally sweet tropical flavor.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$15</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+      <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="drinks/Strawberry.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl text-[#ff0000] font-semibold mb-2 group-hover:text-red-950 transition">
+          Strawberry Juice
+
+        </h4>
+        <p class="text-black text-sm mb-4">
+        Fresh strawberries blended into a sweet and refreshing drink.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$16</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+      <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="drinks/Waterlemon.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl text-[#ff0000] font-semibold mb-2 group-hover:text-red-950 transition">
+         Watermelon Juice
+
+        </h4>
+        <p class="text-black text-sm mb-4">
+         Light and cooling watermelon juice, perfect for hot days.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$13</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+      <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="drinks/pineapple.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl text-[#ff0000] font-semibold mb-2 group-hover:text-red-950 transition">
+          Pineapple Juice
+
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Fresh pineapple juice with a tangy and tropical taste.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$11</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+      <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="drinks/Lemon.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl text-[#ff0000] font-semibold mb-2 group-hover:text-red-950 transition">
+         Lemon Juice
+
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Fresh lemon juice served with a balanced sweet and sour flavor.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$10</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+      <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="drinks/Mixed Fruits.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl text-[#ff0000] font-semibold mb-2 group-hover:text-red-950 transition">
+        Mixed Fruit Juice
+
+
+        </h4>
+        <p class="text-black text-sm mb-4">
+         A refreshing blend of seasonal fruits for a naturally sweet taste.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$11</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+
+</section>
+   <section class="max-w-7xl mx-auto px-6 py-16 ">
+  <h3 class="text-3xl font-bold text-[#C0392B] mb-12  border-l-2 border-[#C0392B] pl-5  pb-4">
+      Soft Drinks 🥤
+  </h3>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="drinks/Cocacola.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl text-[#ff0000] font-semibold mb-2 group-hover:text-red-950 transition">
+          Coca-Cola
+
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Classic cola with a bold and refreshing taste served chilled.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$8</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+      <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="drinks/Pepsi.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl text-[#ff0000] font-semibold mb-2 group-hover:text-red-950 transition">
+         Pepsi
+
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Smooth and crisp cola flavor with a refreshing fizz.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$20</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+      <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="drinks/Sprit.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl text-[#ff0000] font-semibold mb-2 group-hover:text-red-950 transition">
+          Sprite
+
+        </h4>
+        <p class="text-black text-sm mb-4">
+       Clear lemon-lime soda with a light and refreshing taste.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$25</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+      <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="drinks/Fanta.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl text-[#ff0000] font-semibold mb-2 group-hover:text-red-950 transition">
+         Fanta
+
+        </h4>
+        <p class="text-black text-sm mb-4">
+         Fruity and sweet soda with a vibrant, refreshing flavor.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$14</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+      <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="drinks/Oda Water.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl text-[#ff0000] font-semibold mb-2 group-hover:text-red-950 transition">
+         Soda Water
+
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Pure carbonated water, light and refreshing.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$5</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+      <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="drinks/Toni Water.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl text-[#ff0000] font-semibold mb-2 group-hover:text-red-950 transition">
+        Tonic Water
+
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Crisp sparkling water with a subtle bitter taste.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$30</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+      
+
+</section>
+<!-- Page Footer -->
+    <footer class="bg-black text-white py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2026 Advanced Photo Gallery. All rights reserved. <a href="#"
+                    class="text-custom-red hover:text-red-400">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+<script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuIcon = document.getElementById("menu-icon");
+    let isMenuOpen = false;
+
+    menuBtn.addEventListener("click", () => {
+        if (!isMenuOpen) {
+            // فتح القائمة بتأثير السلايد
+            mobileMenu.style.maxHeight = mobileMenu.scrollHeight + "px";
+            mobileMenu.style.opacity = "1";
+            // تدوير الأيقونة
+            menuIcon.style.transform = "rotate(90deg)";
+            isMenuOpen = true;
+        } else {
+            // إغلاق القائمة بتأثير السلايد
+            mobileMenu.style.maxHeight = "0";
+            mobileMenu.style.opacity = "0";
+            // إعادة الأيقونة لوضعها الطبيعي
+            menuIcon.style.transform = "rotate(0deg)";
+            isMenuOpen = false;
+        }
+    });
+
+    // إغلاق القائمة عند النقر على رابط (اختياري)
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.style.maxHeight = "0";
+            mobileMenu.style.opacity = "0";
+            menuIcon.style.transform = "rotate(0deg)";
+            isMenuOpen = false;
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Menu</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+    .bg-main {
+        position: relative;
+        z-index: 1;
+    }
+
+    .bg-main::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: 
+            linear-gradient(135deg, rgba(110, 110, 110, 0.5) 0%, rgba(0, 0, 0, 0.725) 100%), 
+            url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') center/cover no-repeat;
+        /* The RGBA color gives the brownish tint */
+        z-index: -1;
+    }
+
+
+
+
+
+
+    /* إذا أردت تأثير أكثر تطوراً مع تأخير للعناصر */
+    #mobile-menu a {
+        transform: translateY(-10px);
+        opacity: 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    
+    #mobile-menu[style*="max-height: 0"] a {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    
+    #mobile-menu:not([style*="max-height: 0"]) a {
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay: calc(0.1s * var(--i, 0));
+    }
+
+
+
+
+
+
+
+
+
+
+ @keyframes fadeDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    
+    .animate-fadeDown {
+      animation: fadeDown 1.5s ease-out forwards;
+    }
+    
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+
+<body class="bg-black text-white">
+
+    <!-- Navbar -->
+ <nav class="relative shadow-lg bg-[#181818]">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <button id="menu-btn" type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-red-700 hover:duration-500 hover:text-white focus:outline-2 focus:outline-offset-2 focus:outline-white">
+            <span class="absolute -inset-0.5"></span>
+            <span class="sr-only">Open main menu</span>
+            <svg id="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 transition-transform duration-300">
+              <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex shrink-0 items-center">
+            <img src="Logo_Rouge_Dining-removebg-preview.png" alt="Restaurant Logo" class="h-10 w-auto scale-150" />
+          </div>
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex space-x-4">
+              <a href="index.html" class="rounded-md bg-[#C0392B] px-3 py-2 text-sm font-medium text-white hover:text-black hover:bg-white transition font-serif">Home</a>
+    
+              <a href="index MENU.html" class=" rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-red-600/40 hover:text-white transition font-serif">Menu</a>
+              <a href="us2.html" class=" rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-red-600/40 hover:text-white transition font-serif">Us</a>
+              <a href="mido.html" class=" rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-red-600/40 hover:text-white transition font-serif">Gallery</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="text-xl  font-bold tracking-wide">
+            <span class="text-white font-serif"> ROUGE </span>
+            <span class="text-[#C0392B] font-serif"> Dining</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- القائمة المنسدلة مع تأثير السلايد -->
+    <div id="mobile-menu" class="transform transition-all duration-300 ease-in-out overflow-hidden sm:hidden bg-[#FDFCFB] backdrop-blur-sm"
+         style="max-height: 0; opacity: 0;">
+      <div class="space-y-1 px-2 pt-5 pb-3">
+        <a href="index.html" class="block rounded-md bg-red-700 px-3 py-2 text-base font-medium text-black hover:bg-red-800 hover:text-white transition">Home</a>
+
+        <a href="index MENU.html" class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-[#C0392B] hover:text-white transition">Menu</a>
+        <a href="us2.html" class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-[#C0392B] hover:text-white transition">Us</a>
+        <a href="mido.html" class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-[#C0392B] hover:text-white transition">Gallery</a>
+      </div>
+    </div>
+</nav>
+
+     <!-- Main Section -->
+    <section class="h-screen w-full  bg-main flex items-center justify-center text-center px-">
+        <div class="animate-fadeDown bg-black bg-opacity-60 p-10 rounded-2xl shadow-2xl">
+            <h2 class="text-5xl font-bold font-serif text-[#C0392B] mb-6 drop-shadow-xl">
+                 Welcome To Our Menu
+            </h2>
+
+           
+            <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-6">
+
+                <!-- Buttons -->
+                <a href="seafood.html" class="bg-slate-200 hover:bg-red-400 hover:duration-500   px-6 py-3 rounded-xl font-bold text-black shadow-lg">
+    Seafood
+</a>
+
+<a href="meats.html" class="bg-slate-200 hover:bg-red-400 hover:duration-500 px-6 py-3 rounded-xl font-bold text-black shadow-lg">
+    Meats
+</a>
+
+<a href="drinks.html" class="bg-slate-200 hover:bg-red-400 hover:duration-500 px-6 py-3 rounded-xl font-bold text-black shadow-lg">
+    Drinks
+</a>
+
+<a href="deserts.html" class="bg-slate-200 hover:bg-red-400 hover:duration-500 px-6 py-3 rounded-xl font-bold text-black shadow-lg">
+    Desserts
+</a>
+
+
+
+
+            </div>
+        </div>
+    </section>
+<script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuIcon = document.getElementById("menu-icon");
+    let isMenuOpen = false;
+
+    menuBtn.addEventListener("click", () => {
+        if (!isMenuOpen) {
+            // فتح القائمة بتأثير السلايد
+            mobileMenu.style.maxHeight = mobileMenu.scrollHeight + "px";
+            mobileMenu.style.opacity = "1";
+            // تدوير الأيقونة
+            menuIcon.style.transform = "rotate(90deg)";
+            isMenuOpen = true;
+        } else {
+            // إغلاق القائمة بتأثير السلايد
+            mobileMenu.style.maxHeight = "0";
+            mobileMenu.style.opacity = "0";
+            // إعادة الأيقونة لوضعها الطبيعي
+            menuIcon.style.transform = "rotate(0deg)";
+            isMenuOpen = false;
+        }
+    });
+
+    // إغلاق القائمة عند النقر على رابط (اختياري)
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.style.maxHeight = "0";
+            mobileMenu.style.opacity = "0";
+            menuIcon.style.transform = "rotate(0deg)";
+            isMenuOpen = false;
+        });
+    });
+</script>
+
+</body>
+</html>

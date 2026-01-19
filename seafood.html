@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Rouge Dining | Seafood Menu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+  /* إذا أردت تأثير أكثر تطوراً مع تأخير للعناصر */
+    #mobile-menu a {
+        transform: translateY(-10px);
+        opacity: 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    
+    #mobile-menu[style*="max-height: 0"] a {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    
+    #mobile-menu:not([style*="max-height: 0"]) a {
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay: calc(0.1s * var(--i, 0));
+    }
+     .text-custom-red {
+            color: #C0392B;
+        }
+
+
+
+</style>
+<body class=" bg-[#FDFCFB]  font-sans">
+
+  <!-- Navbar -->
+<nav class="relative shadow-lg bg-[#181818]">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <button id="menu-btn" type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-red-700 hover:duration-500 hover:text-white focus:outline-2 focus:outline-offset-2 focus:outline-white">
+            <span class="absolute -inset-0.5"></span>
+            <span class="sr-only">Open main menu</span>
+            <svg id="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 transition-transform duration-300">
+              <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex shrink-0 items-center">
+            <img src="Logo_Rouge_Dining-removebg-preview.png" alt="Restaurant Logo" class="h-10 w-auto scale-150" />
+          </div>
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex space-x-4">
+              <a href="index.html" class="animate-fadeDown rounded-md bg-[#C0392B] px-3 py-2 text-sm font-medium text-white hover:text-black hover:bg-white transition font-serif">Home</a>
+
+              <a href="index MENU.html" class="animate-fadeDown rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-red-600/40 hover:text-white transition font-serif">Menu</a>
+              <a href="us2.html" class="animate-fadeDown rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-red-600/40 hover:text-white transition font-serif">Us</a>
+              <a href="mido.html" class="animate-fadeDown rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-red-600/40 hover:text-white transition font-serif">Gallery</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="text-xl animate-fadeDown font-bold tracking-wide">
+            <span class="text-white font-serif"> ROUGE </span>
+            <span class="text-[#C0392B] font-serif"> Dining</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- القائمة المنسدلة مع تأثير السلايد -->
+    <div id="mobile-menu" class="transform transition-all duration-300 ease-in-out overflow-hidden sm:hidden bg-[#FDFCFB] backdrop-blur-sm"
+         style="max-height: 0; opacity: 0;">
+      <div class="space-y-1 px-2 pt-5 pb-3">
+        <a href="index.html" class="block rounded-md bg-red-700 px-3 py-2 text-base font-medium text-black hover:bg-red-800 hover:text-white transition">Home</a>
+
+        <a href="index MENU.html" class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-[#C0392B] hover:text-white transition">Menu</a>
+        <a href="us2.html" class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-[#C0392B] hover:text-white transition">Us</a>
+        <a href="mido.html" class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-[#C0392B] hover:text-white transition">Gallery</a>
+      </div>
+    </div>
+</nav>
+
+  <!-- Header -->
+  <header class="pt-28  text-center bg-gradient-to-b from-[#c1c1c1] to-[#b9b5b5]">
+    <h2 class="text-4xl font-extrabold font-serif text-[#C0392B]">Seafood Menu</h2>
+    <p class="mt-4 text-black max-w-xl mx-auto   pb-5">Fresh from the sea.</p>
+  </header>
+   <!-- Main Section -->
+    <section class="h-screen w-full  bg-main flex items-center justify-center text-center px-">
+        <div class="bg-black bg-opacity-60 p-10 rounded-2xl shadow-2xl">
+            <h2 class="text-5xl font-bold font-serif text-[#C0392B] mb-6 drop-shadow-xl">
+                 seafood Menu
+            </h2>
+
+           
+            <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-6">
+
+                <!-- Buttons -->
+                <a href="seafood.html" class="bg-red-700 hover:bg-red-900 hover:duration-500 animate-pulse  px-6 py-3 rounded-xl font-bold text-black shadow-lg">
+    Seafood
+</a>
+
+<a href="meats.html" class="bg-slate-200 hover:bg-red-400 px-6 py-3 rounded-xl font-bold text-black shadow-lg">
+    Meats
+</a>
+
+<a href="drinks.html" class="bg-slate-200 hover:bg-red-400 px-6 py-3 rounded-xl font-bold text-black shadow-lg">
+    Drinks
+</a>
+
+<a href="deserts.html" class="bg-slate-200 hover:bg-red-400 px-6 py-3 rounded-xl font-bold text-black shadow-lg">
+    Desserts
+</a>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+  <!-- Cards Section -->
+  <!-- Seafood Cards Section -->
+<section class="max-w-7xl mx-auto px-6 py-16 border-b-2 border-red-600">
+
+  <h3 class="text-3xl font-bold font-serif text-[#C0392B] mb-12 text-center  pb-4">
+    Seafood Selection
+  </h3>
+  <h3 class="text-3xl font-bold font-serif text-[#C0392B] mb-12  border-l-2 border-[#C0392B] pl-5  pb-4">
+    Fish Dishes
+  </h3>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 ">
+
+    <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="seafood/Grilled Sea Bass.png"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl text-[#ff0000] font-semibold mb-2 group-hover:text-red-950 transition">
+        Grilled Sea Bass
+        </h4>
+        <p class="text-black text-sm mb-4">
+         Tender sea bass grilled with olive oil and fresh herbs.
+        </p>
+        <span class="text-red-950  font-bold text-lg">$52</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+
+    <!-- Duplicate Card -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <div class="h-52 overflow-hidden">
+        <img src="seafood/Herb Crusted Salmon.png"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <div class="p-6">
+        <h4 class="text-xl font-semibold text-[#ff0000] mb-2 group-hover:text-red-950 transition">
+         Herb Crusted Salmon
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Salmon fillet coated with aromatic herbs and baked to perfection.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$100</span>
+      </div>
+
+    </div>
+     <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="seafood/Lemon Butter Tilapia.png"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl font-semibold mb-2 text-[#ff0000] group-hover:text-red-950 transition">
+          Lemon Butter Tilapia.
+
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Light tilapia fillet served with rich lemon butter sauce.</p>
+        <span class="text-red-950 font-bold text-lg">$47</span>
+      </div>
+
+    </div>
+      <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="seafood/Blackened Snapper.png"
+              alt="Seafood Dish"
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl font-semibold mb-2 text-[#ff0000] group-hover:text-red-950 transition">
+          Blackened Snapper.
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Snapper seasoned with bold spices and pan-seared for deep flavor.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$43</span>
+      </div>
+
+    </div>
+     <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="seafood/Mediterranean Baked Fish.png"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl font-semibold mb-2 text-[#ff0000] group-hover:text-red-950 transition">
+          Mediterranean Baked Fish
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Oven-baked fish with tomatoes, olives, and Mediterranean herbs.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$33</span>
+      </div>
+
+    </div>
+     <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="seafood/Pan Seared Cod.png"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl font-semibold mb-2 text-[#ff0000] group-hover:text-red-950 transition">
+          Pan Seared Cod
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Crispy outside, tender inside cod fillet seared in butter.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$29</span>
+      </div>
+
+    </div>
+     <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="seafood/Garlic Butter Fish Fillet.png  "
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl font-semibold mb-2 text-[#ff0000] group-hover:text-red-950 transition">
+          Garlic Butter Fish Fillet
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Fish fillet cooked in creamy garlic butter sauce.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$35</span>
+      </div>
+
+    </div>
+     <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="seafood/Crispy Fried Fish Fillet.png"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl font-semibold mb-2 text-[#ff0000] group-hover:text-red-950 transition">
+          Crispy Fried Fish Fillet
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Golden fried fish fillet with a light crispy coating.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$23</span>
+      </div>
+
+    </div>
+     <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="seafood/Herbed Whitefish Fillet.png"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl font-semibold mb-2 text-[#ff0000] group-hover:text-red-950 transition">
+          Herbed Whitefish Fillet
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Delicate whitefish fillet seasoned with fresh herbs and butter.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$41</span>
+      </div>
+
+    </div>
+   
+     
+
+  </div>
+  
+</section>
+<section class="max-w-7xl mx-auto px-6 py-16 border-b-2 border-red-600">
+
+  <h3 class="text-3xl font-bold font-serif text-[#C0392B] mb-12  border-l-2 border-[#C0392B] pl-5  pb-4">
+    Shrimp Specials
+  </h3>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+
+ <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="seafood/grilled shrimp.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl font-semibold mb-2 text-[#ff0000] group-hover:text-red-950 transition">
+          Grilled Shrimp Skewers
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Tender shrimp skewers grilled with herbs and light spices.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$60</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+ <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="seafood/Grillic butter Shrimp.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl font-semibold mb-2 text-[#ff0000] group-hover:text-red-950 transition">
+          Garlic Butter Shrimp
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Juicy shrimp cooked in rich garlic butter sauce.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$60</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+ <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="seafood/crispy shrimp.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl font-semibold mb-2 text-[#ff0000] group-hover:text-red-950 transition">
+          Crispy Fried Shrimp
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Golden fried shrimp with a crunchy coating.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$60</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+ <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="seafood/shrimp scampi.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl font-semibold mb-2 text-[#ff0000] group-hover:text-red-950 transition">
+         Shrimp Scampi
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Shrimp sauteed in garlic, butter, and white wine sauce.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$60</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+ <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="seafood/spicy cajin shrimp.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl font-semibold mb-2 text-[#ff0000] group-hover:text-red-950 transition">
+         Spicy Cajun Shrimp
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Shrimp tossed in bold Cajun spices for a kick.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$60</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+ <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="seafood/shrimp alfredo pasta.png"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl font-semibold mb-2 text-[#ff0000] group-hover:text-red-950 transition">
+          Shrimp Alfredo Pasta
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Creamy Alfredo pasta topped with succulent shrimp.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$60</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+
+
+</section>
+<section class="max-w-7xl mx-auto px-6 py-16 ">
+   
+  <h3 class="text-3xl font-bold font-serif text-[#C0392B] mb-12  border-l-2 border-[#C0392B] pl-5  pb-4">
+    Calamari & Squid
+  </h3>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="seafood/Crispy Fried Calimary.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl font-semibold mb-2 text-[#ff0000] group-hover:text-red-950 transition">
+          Crispy Fried Calamari
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Golden fried calamari served with a hint of lemon.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$60</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+      <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="seafood/grilled carimary whith herbs.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl font-semibold mb-2 text-[#ff0000] group-hover:text-red-950 transition">
+         Grilled Calamari with Herbs
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Tender calamari grilled with fresh Mediterranean herbs.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$60</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+      <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="seafood/Stuffed Calamari.png"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl font-semibold mb-2 text-[#ff0000] group-hover:text-red-950 transition">
+          Stuffed Calamari
+        </h4>
+        <p class="text-black text-sm mb-4">
+        Calamari stuffed with savory herbs and spices.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$60</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+      <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="seafood/carimary rings.jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl font-semibold mb-2 text-[#ff0000] group-hover:text-red-950 transition">
+          Calamari Rings
+        </h4>
+        <p class="text-black text-sm mb-4">
+         Lightly battered calamari rings, crispy and golden.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$60</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+      <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="seafood/spicy .jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl font-semibold mb-2 text-[#ff0000] group-hover:text-red-950 transition">
+          Spicy Calamari
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Calamari tossed in a zesty spicy sauce.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$60</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+      <!-- Card Start -->
+    <div class="group bg-[#ffffff] rounded-2xl overflow-hidden shadow-lg
+                transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+      <!-- Image Container -->
+      <div class="h-52 overflow-hidden">
+        <!-- PUT YOUR IMAGE SRC HERE -->
+        <img src="seafood/Calamari whith Tomato sauce .jpg"
+             alt="Seafood Dish"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+      </div>
+
+      <!-- Card Content -->
+      <div class="p-6">
+        <h4 class="text-xl font-semibold mb-2 text-[#ff0000] group-hover:text-red-950 transition">
+         Calamari in Tomato Sauce
+        </h4>
+        <p class="text-black text-sm mb-4">
+          Tender calamari simmered in rich tomato sauce.
+        </p>
+        <span class="text-red-950 font-bold text-lg">$60</span>
+      </div>
+
+    </div>
+    <!-- Card End -->
+
+</section>
+<!-- Page Footer -->
+    <footer class="bg-black text-white py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2026 Advanced Photo Gallery. All rights reserved. <a href="#"
+                    class="text-custom-red hover:text-red-400">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+<script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuIcon = document.getElementById("menu-icon");
+    let isMenuOpen = false;
+
+    menuBtn.addEventListener("click", () => {
+        if (!isMenuOpen) {
+            // فتح القائمة بتأثير السلايد
+            mobileMenu.style.maxHeight = mobileMenu.scrollHeight + "px";
+            mobileMenu.style.opacity = "1";
+            // تدوير الأيقونة
+            menuIcon.style.transform = "rotate(90deg)";
+            isMenuOpen = true;
+        } else {
+            // إغلاق القائمة بتأثير السلايد
+            mobileMenu.style.maxHeight = "0";
+            mobileMenu.style.opacity = "0";
+            // إعادة الأيقونة لوضعها الطبيعي
+            menuIcon.style.transform = "rotate(0deg)";
+            isMenuOpen = false;
+        }
+    });
+
+    // إغلاق القائمة عند النقر على رابط (اختياري)
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.style.maxHeight = "0";
+            mobileMenu.style.opacity = "0";
+            menuIcon.style.transform = "rotate(0deg)";
+            isMenuOpen = false;
+        });
+    });
+</script>
+
+</body>
+</html>
+

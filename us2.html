@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Team - ROUGE Dining</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Custom Animations */
+    .team-card {
+      transition: all 0.4s ease;
+    }
+    
+    .team-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+    
+    .social-icon {
+      transition: all 0.3s ease;
+    }
+    
+    .social-icon:hover {
+      transform: scale(1.2);
+    }
+    
+    /* Fade In Up Animation */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .animate-fadeInUp {
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+    
+    /* Gradient Background */
+    .gradient-bg {
+      background: linear-gradient(135deg, #181818 0%, #2c3e50 100%);
+    }
+    
+    .role-badge {
+      background: linear-gradient(90deg, #C0392B, #E74C3C);
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Header -->
+  <nav class="relative shadow-lg bg-[#181818]">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <button id="menu-btn" type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-red-700 hover:duration-500 hover:text-white focus:outline-2 focus:outline-offset-2 focus:outline-white">
+            <svg id="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 transition-transform duration-300">
+              <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex shrink-0 items-center">
+            <img src="Gemini_Generated_Image_k3k1e5k3k1e5k3k1-removebg-preview.png" alt="Restaurant Logo" class="h-10 w-auto scale-150" />
+          </div>
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex space-x-4">
+              <a href="index.html" class="animate-fadeDown rounded-md bg-[#C0392B] px-3 py-2 text-sm font-medium text-white hover:text-black hover:bg-white transition font-serif">Home</a>
+   
+              <a href="index MENU.html" class="animate-fadeDown rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-red-600/40 hover:text-white transition font-serif">Menu</a>
+              <a href="us2.html" class="animate-fadeDown rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-red-600/40 hover:text-white transition font-serif">Us</a>
+              <a href="mido.html" class="animate-fadeDown rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-red-600/40 hover:text-white transition font-serif">Gallery</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="text-xl animate-fadeDown font-bold tracking-wide">
+            <span class="text-white font-serif"> ROUGE</span>
+            <span class="text-[#C0392B] font-serif"> Dining</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="transform transition-all duration-300 ease-in-out overflow-hidden sm:hidden bg-[#FDFCFB] backdrop-blur-sm"
+         style="max-height: 0; opacity: 0;">
+      <div class="space-y-1 px-2 pt-5 pb-3">
+        <a href="index.html" class="block rounded-md bg-red-700 px-3 py-2 text-base font-medium text-black hover:bg-red-800 hover:text-white transition">Home</a>
+ 
+        <a href="index MENU.html" class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-[#C0392B] hover:text-white transition">Menu</a>
+        <a href="us2.html" class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-[#C0392B] hover:text-white transition">Us</a>
+        <a href="mido.html" class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-[#C0392B] hover:text-white transition">Gallery</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="gradient-bg text-white py-20">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h1 class="text-5xl font-bold mb-6 animate-fadeInUp" style="animation-delay: 0.2s">
+        <span class="text-white">The Team Behind</span>
+        <span class="text-[#C0392B]"> ROUGE Dining</span>
+      </h1>
+      <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-8 animate-fadeInUp" style="animation-delay: 0.4s">
+        A group of talented individuals united by one passion: delivering an exceptional dining experience
+      </p>
+      <div class="flex justify-center space-x-4 animate-fadeInUp" style="animation-delay: 0.6s">
+        <div class="bg-[#C0392B] text-white px-6 py-3 rounded-full font-semibold">
+          6 Team Members
+        </div>
+        <div class="bg-white text-[#181818] px-6 py-3 rounded-full font-semibold">
+          Complete Team
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Mission -->
+  <section class="py-16 bg-white">
+    
+      
+      <!-- Team Stats -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+        <div class="text-center p-6 bg-red-50 rounded-xl">
+          <div class="text-4xl font-bold text-[#C0392B] mb-2">6</div>
+          <div class="text-gray-700">Team Members</div>
+        </div>
+        <div class="text-center p-6 bg-gray-100 rounded-xl">
+          <div class="text-4xl font-bold text-[#C0392B] mb-2">1</div>
+          <div class="text-gray-700">Months of Work</div>
+        </div>
+        <div class="text-center p-6 bg-red-50 rounded-xl">
+          <div class="text-4xl font-bold text-[#C0392B] mb-2">100+</div>
+          <div class="text-gray-700">Development Hours</div>
+        </div>
+        <div class="text-center p-6 bg-gray-100 rounded-xl">
+          <div class="text-4xl font-bold text-[#C0392B] mb-2">100%</div>
+          <div class="text-gray-700">Dedication</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meet Our Team -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Meet Our Team</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Member 2 -->
+        <div class="team-card bg-white rounded-2xl overflow-hidden shadow-lg animate-fadeInUp" style="animation-delay: 0.2s">
+          <div class="relative">
+            <img src="us/نوران.jpg" alt="Team Leader" class="w-full h-64 object-cover">
+            <div class="absolute top-4 left-4">
+              <span class="role-badge text-white px-4 py-1 rounded-full text-sm font-semibold">Team Leader</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Nouran Ali</h3>
+            <p class="text-gray-600 mb-4"></p>
+            <p class="text-gray-500 text-sm mb-4">
+             
+            </p>
+            <div class="flex space-x-3">
+              <a href="#" class="social-icon text-gray-400 hover:text-[#C0392B]">
+                <i class="fab fa-linkedin text-lg"></i>
+              </a>
+              <a href="#" class="social-icon text-gray-400 hover:text-[#C0392B]">
+                <i class="fab fa-github text-lg"></i>
+              </a>
+              <a href="#" class="social-icon text-gray-400 hover:text-[#C0392B]">
+                <i class="fab fa-codepen text-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Member 3 -->
+        <div class="team-card bg-white rounded-2xl overflow-hidden shadow-lg animate-fadeInUp" style="animation-delay: 0.3s">
+          <div class="relative">
+            <img src="us/ميرنا.jpg" alt="Team Member" class="w-full h-64 object-cover">
+            <div class="absolute top-4 left-4">
+              <span class="role-badge text-white px-4 py-1 rounded-full text-sm font-semibold">Team Member</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Merna Assad</h3>
+            <p class="text-gray-600 mb-4"></p>
+            <p class="text-gray-500 text-sm mb-4">       </p>
+            <div class="flex space-x-3">
+              <a href="#" class="social-icon text-gray-400 hover:text-[#C0392B]">
+                <i class="fab fa-linkedin text-lg"></i>
+              </a>
+              <a href="#" class="social-icon text-gray-400 hover:text-[#C0392B]">
+                <i class="fab fa-behance text-lg"></i>
+              </a>
+              <a href="#" class="social-icon text-gray-400 hover:text-[#C0392B]">
+                <i class="fab fa-dribbble text-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        
+        <!-- Member 1 -->
+        <div class="team-card bg-white rounded-2xl overflow-hidden shadow-lg animate-fadeInUp" style="animation-delay: 0.1s">
+          <div class="relative">
+            <img src="us/يوسف رضا .jpg" alt="Team Member" class="w-full h-64 object-cover">
+            <div class="absolute top-4 left-4">
+              <span class="role-badge text-white px-4 py-1 rounded-full text-sm font-semibold">Team Member</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Youssef Reda</h3>
+            <p class="text-gray-600 mb-4">
+            </p>
+            <p class="text-gray-500 text-sm mb-4">
+             
+            </p>
+            <div class="flex space-x-3">
+              <a href="#" class="social-icon text-gray-400 hover:text-[#C0392B]">
+                <i class="fab fa-linkedin text-lg"></i>
+              </a>
+              <a href="#" class="social-icon text-gray-400 hover:text-[#C0392B]">
+                <i class="fab fa-github text-lg"></i>
+              </a>
+              <a href="#" class="social-icon text-gray-400 hover:text-[#C0392B]">
+                <i class="fab fa-twitter text-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Member 4 -->
+        <div class="team-card bg-white rounded-2xl overflow-hidden shadow-lg animate-fadeInUp" style="animation-delay: 0.4s">
+          <div class="relative">
+            <img src="us/Nour.jpg" alt="Team Member" class="w-full h-64 object-cover">
+            <div class="absolute top-4 left-4">
+              <span class="role-badge text-white px-4 py-1 rounded-full text-sm font-semibold">Team Member</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Nour-Eldin Hamdy</h3>
+            <p class="text-gray-600 mb-4"></p>
+            <p class="text-gray-500 text-sm mb-4">
+   
+            </p>
+            <div class="flex space-x-3">
+              <a href="#" class="social-icon text-gray-400 hover:text-[#C0392B]">
+                <i class="fab fa-linkedin text-lg"></i>
+              </a>
+              <a href="#" class="social-icon text-gray-400 hover:text-[#C0392B]">
+                <i class="fab fa-github text-lg"></i>
+              </a>
+              <a href="#" class="social-icon text-gray-400 hover:text-[#C0392B]">
+                <i class="fab fa-stack-overflow text-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Member 5 -->
+        <div class="team-card bg-white rounded-2xl overflow-hidden shadow-lg animate-fadeInUp" style="animation-delay: 0.5s">
+          <div class="relative">
+            <img src="us/Ahmed.jpg" alt="Team Member" class="w-full h-64 object-cover">
+            <div class="absolute top-4 left-4">
+              <span class="role-badge text-white px-4 py-1 rounded-full text-sm font-semibold">Team Member</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Ahmed Maher</h3>
+            <p class="text-gray-600 mb-4"></p>
+            <p class="text-gray-500 text-sm mb-4">
+            
+            </p>
+            <div class="flex space-x-3">
+              <a href="#" class="social-icon text-gray-400 hover:text-[#C0392B]">
+                <i class="fab fa-facebook text-lg"></i>
+              </a>
+              <a href="#" class="social-icon text-gray-400 hover:text-[#C0392B]">
+                <i class="fab fa-medium text-lg"></i>
+              </a>
+              <a href="#" class="social-icon text-gray-400 hover:text-[#C0392B]">
+                <i class="fab fa-wordpress text-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Member 6 -->
+        <div class="team-card bg-white rounded-2xl overflow-hidden shadow-lg animate-fadeInUp" style="animation-delay: 0.6s">
+          <div class="relative">
+            <img src="us/Hamdy.jpg" alt="Team Member" class="w-full h-64 object-cover">
+            <div class="absolute top-4 left-4">
+              <span class="role-badge text-white px-4 py-1 rounded-full text-sm font-semibold">Team Member</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Youssef Hamdy</h3>
+            <p class="text-gray-600 mb-4"></p>
+            <p class="text-gray-500 text-sm mb-4">
+        
+            </p>
+            <div class="flex space-x-3">
+              <a href="#" class="social-icon text-gray-400 hover:text-[#C0392B]">
+                <i class="fab fa-linkedin text-lg"></i>
+              </a>
+              <a href="#" class="social-icon text-gray-400 hover:text-[#C0392B]">
+                <i class="fab fa-github text-lg"></i>
+              </a>
+              <a href="#" class="social-icon text-gray-400 hover:text-[#C0392B]">
+                <i class="fas fa-bug text-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Journey -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Project Development Journey</h2>
+      
+      <!-- Timeline -->
+      <div class="relative">
+        <!-- Center Line -->
+        <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#C0392B] hidden md:block"></div>
+        
+        <!-- Phase 1 -->
+        <div class="flex flex-col md:flex-row items-center mb-12">
+          <div class="md:w-1/2 md:pr-12 mb-6 md:mb-0 text-right">
+            <div class="bg-red-50 p-6 rounded-xl">
+              <div class="text-2xl font-bold text-[#C0392B] mb-2">1. Planning</div>
+              <p class="text-gray-600">We started with brainstorming sessions to define ROUGE Dining's vision and mission</p>
+            </div>
+          </div>
+          <div class="md:w-1/2 md:pl-12">
+            <div class="flex items-center justify-center">
+              <div class="w-8 h-8 bg-[#C0392B] rounded-full border-4 border-white shadow-lg"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="flex flex-col md:flex-row items-center mb-12">
+          <div class="md:w-1/2 md:pr-12 order-2 md:order-1">
+            <div class="flex items-center justify-center">
+              <div class="w-8 h-8 bg-[#C0392B] rounded-full border-4 border-white shadow-lg"></div>
+            </div>
+          </div>
+          <div class="md:w-1/2 md:pl-12 mb-6 md:mb-0 order-1 md:order-2 text-left">
+            <div class="bg-gray-100 p-6 rounded-xl">
+              <div class="text-2xl font-bold text-[#C0392B] mb-2">2. Design</div>
+              <p class="text-gray-600">Intensive work on user interfaces and customer experience</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 3 -->
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 md:pr-12 mb-6 md:mb-0 text-right">
+            <div class="bg-red-50 p-6 rounded-xl">
+              <div class="text-2xl font-bold text-[#C0392B] mb-2">3. Development</div>
+              <p class="text-gray-600">Programming and building the website with all its sections using the latest technologies</p>
+            </div>
+          </div>
+          <div class="md:w-1/2 md:pl-12">
+            <div class="flex items-center justify-center">
+              <div class="w-8 h-8 bg-[#C0392B] rounded-full border-4 border-white shadow-lg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technologies Used -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Technologies We Used</h2>
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow text-center hover:shadow-lg transition-shadow">
+          <i class="fab fa-html5 text-4xl text-orange-500 mb-3"></i>
+          <div class="font-semibold text-gray-700">HTML5</div>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow text-center hover:shadow-lg transition-shadow">
+          <i class="fab fa-css3-alt text-4xl text-blue-500 mb-3"></i>
+          <div class="font-semibold text-gray-700">CSS3</div>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow text-center hover:shadow-lg transition-shadow">
+          <i class="fab fa-js text-4xl text-yellow-500 mb-3"></i>
+          <div class="font-semibold text-gray-700">JavaScript</div>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow text-center hover:shadow-lg transition-shadow">
+          <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" class="h-12 mx-auto mb-3" alt="Tailwind">
+          <div class="font-semibold text-gray-700">Tailwind CSS</div>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow text-center hover:shadow-lg transition-shadow">
+          <i class="fab fa-git-alt text-4xl text-red-500 mb-3"></i>
+          <div class="font-semibold text-gray-700">Git</div>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow text-center hover:shadow-lg transition-shadow">
+          <i class="fab fa-github text-4xl text-purple-500 mb-3"></i>
+          <div class="font-semibold text-gray-700">Git-Hub</div>
+        </div>
+      </div>    
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-16 gradient-bg text-white">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6">Want to Work With Us?</h2>
+      <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+        We're always excited about new projects and creative ideas. Contact us to discuss your next project.
+      </p>
+      
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#181818] shadow mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row justify-between items-center text-white">
+      <p class="text-red-500">&copy; 2025 ROUGE Dining. All rights reserved.</p>
+      <div class="flex space-x-4 mt-4 md:mt-0">
+        <p class="text-[#c03]">Contact Us : </p>
+        <a href="#" class="hover:text-red-600 duration-300">Facebook</a>
+        <a href="#" class="hover:text-red-600 duration-300">Instagram</a>
+        <a href="#" class="hover:text-red-600 duration-300">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Animations
+  <script>
+    // Intersection Observer for Staggered Animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          // Add staggered delay
+          setTimeout(() => {
+            entry.target.style.opacity = '1';
+            entry.target.style.animation = 'fadeInUp 0.6s ease-out forwards';
+          }, index * 100);
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    // Observe all elements with animate-fadeInUp class
+    document.querySelectorAll('.animate-fadeInUp').forEach(el => {
+      el.style.opacity = '0';
+      observer.observe(el);
+    });
+
+    // Hover effect on team cards
+    document.querySelectorAll('.team-card').forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        card.style.transform = 'translateY(-10px)';
+      });
+      
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'translateY(0)';
+      });
+    });
+
+    // Mobile Menu Toggle (from your existing code)
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuIcon = document.getElementById("menu-icon");
+    let isMenuOpen = false;
+
+    menuBtn.addEventListener("click", () => {
+        if (!isMenuOpen) {
+            // Open menu with slide effect
+            mobileMenu.style.maxHeight = mobileMenu.scrollHeight + "px";
+            mobileMenu.style.opacity = "1";
+            // Rotate icon
+            menuIcon.style.transform = "rotate(90deg)";
+            isMenuOpen = true;
+        } else {
+            // Close menu with slide effect
+            mobileMenu.style.maxHeight = "0";
+            mobileMenu.style.opacity = "0";
+            // Reset icon
+            menuIcon.style.transform = "rotate(0deg)";
+            isMenuOpen = false;
+        }
+    });
+
+    // Close menu when clicking on links (optional)
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.style.maxHeight = "0";
+            mobileMenu.style.opacity = "0";
+            menuIcon.style.transform = "rotate(0deg)";
+            isMenuOpen = false;
+        });
+    });
+  </script> -->
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuIcon = document.getElementById("menu-icon");
+    let isMenuOpen = false;
+
+    menuBtn.addEventListener("click", () => {
+        if (!isMenuOpen) {
+            // فتح القائمة بتأثير السلايد
+            mobileMenu.style.maxHeight = mobileMenu.scrollHeight + "px";
+            mobileMenu.style.opacity = "1";
+            // تدوير الأيقونة
+            menuIcon.style.transform = "rotate(90deg)";
+            isMenuOpen = true;
+        } else {
+            // إغلاق القائمة بتأثير السلايد
+            mobileMenu.style.maxHeight = "0";
+            mobileMenu.style.opacity = "0";
+            // إعادة الأيقونة لوضعها الطبيعي
+            menuIcon.style.transform = "rotate(0deg)";
+            isMenuOpen = false;
+        }
+    });
+
+    // إغلاق القائمة عند النقر على رابط (اختياري)
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.style.maxHeight = "0";
+            mobileMenu.style.opacity = "0";
+            menuIcon.style.transform = "rotate(0deg)";
+            isMenuOpen = false;
+        });
+    });
+</script>
+</body>
+</html>
